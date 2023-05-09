@@ -20,3 +20,12 @@
   line-height: 50px;
   color: #ffffff;
 }
+
+.copyright {
+  width: 1296px;
+  height: 55px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+}

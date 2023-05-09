@@ -1,0 +1,57 @@
+.ourTeam {
+  width: 1296px;
+  margin: 100px auto 80px;
+}
+
+.ourTeam_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 100px;
+}
+
+.ourTeam_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.ourTeam_employee {
+  margin-bottom: 60px;
+}
+
+.employee_imageWrapper {
+  position: relative;
+  width: 400px;
+  height: 477px;
+  margin-bottom: 30px;
+}
+
+.employee_imageFrame {
+  width: 400px;
+  height: 477px;
+  border: 1px solid #cdaa7d80;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  z-index: 0;
+}
+
+.employee_image {
+  position: absolute;
+  z-index: 1;
+}
+
+.employee_name {
+  font-weight: 400;
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.employee_profession {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+}

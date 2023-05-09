@@ -59,7 +59,6 @@ const Home = () => {
       </div>
       <OurWorks/>
       <Footer/>
-      <div className={styles.copyright}>Copyright © 2017 - 2022</div>
     </>
   );
 };

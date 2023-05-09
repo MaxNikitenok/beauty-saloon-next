@@ -1,11 +1,12 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import OurTeam from "@/components/OurTeam";
 
 const Homed = () => {
   return (
     <>
       <Navbar/>
-      <div>Our Team</div>
+      <OurTeam/>
       <Footer/>
     </>
   );
