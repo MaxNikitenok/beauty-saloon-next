@@ -1,0 +1,40 @@
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1296px;
+  height: 832px;
+  margin: 20px auto 150px;
+  gap: 24px;
+}
+
+.services_item {
+  margin-bottom: 60px;
+}
+
+.item_imageWrapper {
+  position: relative;
+  width: 396px;
+  height: 300px;
+  margin-bottom: 30px;
+}
+
+.item_imageFrame {
+  width: 396px;
+  height: 300px;
+  border: 1px solid #cdaa7d80;
+  position: absolute;
+  left: 20px;
+  top: -20px;
+  z-index: 0;
+}
+
+.item_image {
+  position: absolute;
+  z-index: 1;
+}
+
+.item_title {
+  font-weight: 400;
+  font-size: 30px;
+  color: #ffffff;
+}

@@ -3,41 +3,6 @@
   background: url(../public/main_bgc.png) no-repeat center top;
 }
 
-.header {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
-  border-bottom: 1px solid #ffffff80;
-}
-
-.instaLink {
-  flex: 1;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  flex: 2;
-}
-
-.menu {
-  flex: 1;
-  text-align: end;
-}
-
-.leftNav,
-.rightNav {
-  display: flex;
-  flex: 3;
-  justify-content: space-between;
-}
-
 .main_title {
   width: 961px;
   height: 258px;
@@ -80,47 +45,6 @@
   margin-bottom: 12px;
 }
 
-.services {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1296px;
-  height: 832px;
-  margin: 0 auto 150px;
-  gap: 24px;
-}
-
-.services_item {
-  margin-bottom: 60px;
-}
-
-.item_imageWrapper {
-  position: relative;
-  width: 396px;
-  height: 300px;
-  margin-bottom: 30px;
-}
-
-.item_imageFrame {
-  width: 396px;
-  height: 300px;
-  border: 1px solid #cdaa7d80;
-  position: absolute;
-  left: 20px;
-  top: -20px;
-  z-index: 0;
-}
-
-.item_image {
-  position: absolute;
-  z-index: 1;
-}
-
-.item_title {
-  font-weight: 400;
-  font-size: 30px;
-  color: #ffffff;
-}
-
 .cosmetics {
   width: 1296px;
   height: 144px;
@@ -131,59 +55,6 @@
 
 .cosmetics_item {
   opacity: 0.5;
-}
-
-.ourWorks {
-  width: 1296px;
-  height: 1525px;
-  margin: 0 auto 100px;
-}
-
-.ourWorks_title {
-  font-weight: 700;
-  font-size: 48px;
-  color: #ffffff;
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.ourWorks_navigation {
-  font-weight: 400;
-  font-size: 24px;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin-bottom: 60px;
-}
-
-.ourWorks_works {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-}
-
-.footer {
-  width: 1296px;
-  margin: 0 auto 30px;
-  padding: 70px 0;
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #ffffff80;
-  border-bottom: 1px solid #ffffff80;
-}
-
-.footer_titles {
-  font-weight: 700;
-  font-size: 24px;
-  color: #ffffff;
-  margin-bottom: 24px;
-}
-.footer_infos {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 50px;
-  color: #ffffff;
 }
 
 .copyright {
