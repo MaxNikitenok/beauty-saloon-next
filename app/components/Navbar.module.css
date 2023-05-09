@@ -1,0 +1,34 @@
+.navbar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff80;
+}
+
+.instaLink {
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+.menu {
+  flex: 1;
+  text-align: end;
+}
+
+.leftLinks,
+.rightLinks {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+}
