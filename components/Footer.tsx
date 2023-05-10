@@ -10,7 +10,7 @@ const Footer = () => {
           <Image src="/logo.png" width={60} height={58} alt="logo" />
         </div>
         <div className={styles.footer_contacts}>
-          <div className={styles.footer_titles}>Контакты</div>
+          <div className={styles.footer_title}>Контакты</div>
           <div className={styles.footer_infos}>
             <p>+7 (812) 123-45-67</p>
             <p>+7 (812) 123-45-67</p>
@@ -18,7 +18,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footer_mode}>
-          <div className={styles.footer_titles}>Режим работы</div>
+          <div className={styles.footer_title}>Режим работы</div>
           <div className={styles.footer_infos}>
             <p>C 10:00 до 21:00 (Пн-Пт)</p>
             <p>С 11:00 до 20:00 (Сб-Вс)</p>

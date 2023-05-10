@@ -43,7 +43,7 @@ const Home = () => {
         </div>
       </div>
       <Services/>
-      <div className={styles.cosmetics}>
+      <div className={styles.cosmetics} id='cosmetics'>
         <div className={styles.cosmetics_item}>
           <Image src="/kevin.png" width={69} height={108} alt="Kevin Murphy" />
         </div>

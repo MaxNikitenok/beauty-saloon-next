@@ -32,3 +32,18 @@
   flex: 3;
   justify-content: space-between;
 }
+
+.link {
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.link_hover {
+  color: #CDAA7D;
+}
+
+.link_active {
+  color: #CDAA7D;
+  outline: #CDAA7D;
+}
