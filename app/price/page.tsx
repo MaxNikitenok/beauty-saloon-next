@@ -1,15 +1,16 @@
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Price from "@/components/Price";
 
-const ContactsPage = () => {
+const PricePage = () => {
   return (
     <>
       <Navbar/>
-      <Contacts/>
+      <Price/>
       <Footer/>
     </>
   );
 };
 
-export default ContactsPage;
+export default PricePage;

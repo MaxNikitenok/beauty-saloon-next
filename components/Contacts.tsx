@@ -1,5 +1,4 @@
 import styles from '../styles/Contacts.module.css';
-import Image from 'next/image';
 
 const Contacts = () => {
   return (

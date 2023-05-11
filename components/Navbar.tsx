@@ -30,8 +30,8 @@ const Navbar = () => {
         <Image src="/logo.png" width={40} height={38} alt="logo" />
       </div>
       <div className={styles.rightLinks}>
-        <Link href="/" className={styles.link}>
-          Акции
+        <Link href="/price" className={styles.link}>
+          Цены
         </Link>
         <Link href="/" className={styles.link}>
           Отзывы
