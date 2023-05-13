@@ -1,14 +1,15 @@
 import styles from '../styles/Footer.module.css';
 import { SlSocialInstagram } from 'react-icons/sl';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
     <>
       <footer className={styles.footer}>
-        <div className={styles.footer_logo}>
+        <Link href={'/'} className={styles.footer_logo}>
           <Image src="/logo.png" width={60} height={58} alt="logo" />
-        </div>
+        </Link>
         <div className={styles.footer_contacts}>
           <div className={styles.footer_title}>Контакты</div>
           <div className={styles.footer_infos}>
@@ -25,9 +26,9 @@ const Footer = () => {
           </div>
         </div>
         <div className={styles.footer_socials}>
-          <div className={styles.footer_titles}>Мы в Instagram</div>
+          <div className={styles.footer_title}>Мы в Instagram</div>
           <div className={styles.footer_socials_links}>
-            <a href="">
+            <a href="https://www.instagram.com/">
               <SlSocialInstagram size={36} color="#ffffff" />
             </a>
           </div>

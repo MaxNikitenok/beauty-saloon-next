@@ -1,0 +1,13 @@
+.reviews {
+  width: 1296px;
+  height: 144px;
+  display: flex;
+  margin: 100px auto 168px;
+  justify-content: space-around;
+}
+
+.reviews p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}

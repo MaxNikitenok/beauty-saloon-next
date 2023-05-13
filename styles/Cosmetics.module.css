@@ -1,0 +1,11 @@
+.cosmetics {
+  width: 1296px;
+  height: 144px;
+  display: flex;
+  margin: 100px auto 168px;
+  justify-content: space-around;
+}
+
+.cosmetics_item {
+  opacity: 0.5;
+}

@@ -60,13 +60,14 @@
   position: relative;
   width: 50px;
   height: 20px;
+  cursor: pointer;
 }
 
 .menuButton_topLine {
   position: absolute;
   right: 0;
   width: 40px;
-  transition: cubic-bezier(.77,.26,.29,1.51);
+  transition: cubic-bezier(0.77, 0.26, 0.29, 1.51);
   border-bottom: 1px solid #fff;
   transition-duration: 1000ms;
 }
@@ -76,7 +77,7 @@
   right: -30vw;
   width: 40px;
   opacity: 0;
-  transition: cubic-bezier(.77,.26,.29,1.51);
+  transition: cubic-bezier(0.77, 0.26, 0.29, 1.51);
   border-bottom: 1px solid #fff;
   transition-duration: 600ms;
   /* transition-delay: 200ms; */
@@ -87,7 +88,7 @@
   top: 10px;
   right: 10px;
   width: 40px;
-  transition: cubic-bezier(.77,.26,.29,1.51);
+  transition: cubic-bezier(0.77, 0.26, 0.29, 1.51);
   border-bottom: 1px solid #fff;
   transition-duration: 1000ms;
   transition-delay: 400ms;
@@ -99,7 +100,7 @@
   right: -30vw;
   width: 40px;
   opacity: 0;
-  transition: cubic-bezier(.77,.26,.29,1.51);
+  transition: cubic-bezier(0.77, 0.26, 0.29, 1.51);
   border-bottom: 1px solid #fff;
   transition-duration: 600ms;
   transition-delay: 400ms;
@@ -110,7 +111,7 @@
   top: 20px;
   right: 0;
   width: 40px;
-  transition: cubic-bezier(.77,.26,.29,1.51);
+  transition: cubic-bezier(0.77, 0.26, 0.29, 1.51);
   border-bottom: 1px solid #fff;
   transition-duration: 1000ms;
   transition-delay: 200ms;
@@ -122,40 +123,85 @@
   right: -30vw;
   width: 40px;
   opacity: 0;
-  transition: cubic-bezier(.77,.26,.29,1.51);
+  transition: cubic-bezier(0.77, 0.26, 0.29, 1.51);
   border-bottom: 1px solid #fff;
   transition-duration: 600ms;
   transition-delay: 200ms;
 }
 
-.menuWrapper {
-  position: absolute;
+.popupWrapper {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
 }
 
-.showMenu {
+.showPopup {
   width: 475px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   top: 0;
   right: 0;
-  background-color: #ffffff80;
-  transition: cubic-bezier(.94,-0.57,.02,1.52);
+  border: 1px solid #ffffff80;
+  background-color: #111111;
+  transition: cubic-bezier(0.94, -0.57, 0.02, 1.52);
   transition-duration: 1000ms;
-  transition-delay: 600ms;
+  transition-delay: 400ms;
 }
 
-.hideMenu {
+.hidePopup {
   width: 475px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
+  z-index: 999;
   top: 0;
   right: -600px;
-  background-color: #ffffff80;
+  border: 1px solid #ffffff80;
+  background-color: #111111;
   opacity: 0;
-  transition: cubic-bezier(.94,-0.57,.02,1.52);
+  transition: cubic-bezier(0.94, -0.57, 0.02, 1.52);
   transition-duration: 1000ms;
+}
+
+.popup {
+  position: relative;
+  padding: 0 80px;
+}
+
+.popup_cross {
+  position: absolute;
+  top: 42px;
+  left: 82px;
+  cursor: pointer;
+}
+
+.popup_content {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+
+.popup_text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.block_title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+.block_description {
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
