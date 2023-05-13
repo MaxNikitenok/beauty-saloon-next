@@ -16,9 +16,9 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.navbar}>
-        <div className={styles.instaLink}>
+        <a href='https://www.instagram.com/' className={styles.instaLink}>
           <SlSocialInstagram size={24} />
-        </div>
+        </a>
         <div className={styles.leftLinks}>
           <Link
             href="/"
@@ -34,18 +34,18 @@ const Navbar = () => {
           >
             Мастера
           </Link>
-          <Link href="/" className={styles.link}>
+          <Link href="/cosmetics" className={pathname === '/cosmetics' ? styles.link_active : styles.link}>
             Косметика
           </Link>
         </div>
-        <div className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           <Image src="/logo.png" width={40} height={38} alt="logo" />
-        </div>
+        </Link>
         <div className={styles.rightLinks}>
-          <Link href="/price" className={styles.link}>
+          <Link href="/price" className={pathname === '/price' ? styles.link_active : styles.link}>
             Цены
           </Link>
-          <Link href="/" className={styles.link}>
+          <Link href="/reviews" className={pathname === '/reviews' ? styles.link_active : styles.link}>
             Отзывы
           </Link>
           <Link

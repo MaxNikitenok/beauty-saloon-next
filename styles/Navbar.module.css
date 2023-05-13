@@ -13,6 +13,8 @@
 
 .instaLink {
   flex: 1;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .logo {
@@ -32,15 +34,20 @@
   outline: none;
   text-decoration: none;
   color: #ffffff;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
 }
 
-.link_hover {
+.link:hover {
   color: #cdaa7d;
+  transition-duration: 500ms;
 }
 
 .link_active {
   color: #cdaa7d;
-  outline: #cdaa7d;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #cdaa7d;
 }
 
 .menuButton_container {
@@ -59,7 +66,7 @@
   position: absolute;
   right: 0;
   width: 40px;
-  transition: cubic-bezier(.94,-0.57,.02,1.52);
+  transition: cubic-bezier(.77,.26,.29,1.51);
   border-bottom: 1px solid #fff;
   transition-duration: 1000ms;
 }
@@ -69,10 +76,10 @@
   right: -30vw;
   width: 40px;
   opacity: 0;
-  transition: cubic-bezier(.94,-0.57,.02,1.52);
+  transition: cubic-bezier(.77,.26,.29,1.51);
   border-bottom: 1px solid #fff;
-  transition-duration: 1000ms;
-  transition-delay: 200ms;
+  transition-duration: 600ms;
+  /* transition-delay: 200ms; */
 }
 
 .menuButton_centerLine {
@@ -80,7 +87,7 @@
   top: 10px;
   right: 10px;
   width: 40px;
-  transition: cubic-bezier(.94,-0.57,.02,1.52);
+  transition: cubic-bezier(.77,.26,.29,1.51);
   border-bottom: 1px solid #fff;
   transition-duration: 1000ms;
   transition-delay: 400ms;
@@ -92,10 +99,10 @@
   right: -30vw;
   width: 40px;
   opacity: 0;
-  transition: cubic-bezier(.94,-0.57,.02,1.52);
+  transition: cubic-bezier(.77,.26,.29,1.51);
   border-bottom: 1px solid #fff;
-  transition-duration: 1000ms;
-  transition-delay: 600ms;
+  transition-duration: 600ms;
+  transition-delay: 400ms;
 }
 
 .menuButton_bottomLine {
@@ -103,7 +110,7 @@
   top: 20px;
   right: 0;
   width: 40px;
-  transition: cubic-bezier(.94,-0.57,.02,1.52);
+  transition: cubic-bezier(.77,.26,.29,1.51);
   border-bottom: 1px solid #fff;
   transition-duration: 1000ms;
   transition-delay: 200ms;
@@ -115,19 +122,18 @@
   right: -30vw;
   width: 40px;
   opacity: 0;
-  transition: cubic-bezier(.94,-0.57,.02,1.52);
+  transition: cubic-bezier(.77,.26,.29,1.51);
   border-bottom: 1px solid #fff;
-  transition-duration: 1000ms;
-  transition-delay: 400ms;
+  transition-duration: 600ms;
+  transition-delay: 200ms;
 }
 
 .menuWrapper {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
 }
 
 .showMenu {

@@ -1,15 +1,14 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Price from "@/components/Price";
 
-const PricePage = () => {
+const CosmeticsPage = () => {
   return (
     <>
       <Navbar/>
-      <Price/>
+      <p>Извините, страница на стадии разработки...</p>
       <Footer/>
     </>
   );
 };
 
-export default PricePage;
+export default CosmeticsPage;
