@@ -1,88 +1,67 @@
 import styles from '../styles/Services.module.css';
 import Image from 'next/image';
 
+const services = [
+  {
+    id: 1,
+    img: '/hairdressers.png',
+    alt: 'hairdressers',
+    title: 'Парикмахерские услуги',
+  },
+  {
+    id: 2,
+    img: '/manicure.png',
+    alt: 'manicure',
+    title: 'Маникюр',
+  },
+  {
+    id: 3,
+    img: '/pedicure.png',
+    alt: 'pedicure',
+    title: 'Педикюр',
+  },
+  {
+    id: 4,
+    img: '/cosmetology.png',
+    alt: 'cosmetology',
+    title: 'Косметология',
+  },
+  {
+    id: 5,
+    img: '/aesthetist.png',
+    alt: 'aesthetist',
+    title: 'Эстетист по телу',
+  },
+  {
+    id: 6,
+    img: '/visage.png',
+    alt: 'visage',
+    title: 'Визаж',
+  },
+];
+
 const Services = () => {
   return (
     <div className={styles.services}>
-      <div className={styles.services_item}>
-        <div className={styles.item_imageWrapper}>
-          <div className={styles.item_imageFrame}></div>
-          <div className={styles.item_image}>
-            <Image
-              src="/hairdressers.png"
-              width={396}
-              height={300}
-              alt="hairdressers"
-            />
+      {services.map((service) => {
+        return (
+          <div className={styles.services_item} key={service.id}>
+            <div className={styles.item_imageWrapper}>
+              <div className={styles.item_imageFrame}></div>
+              <div className={styles.item_image}>
+                <Image
+                  src={service.img}
+                  width={396}
+                  height={300}
+                  alt={service.alt}
+                />
+              </div>
+            </div>
+            <div className={styles.item_title}>{service.title}</div>
           </div>
-        </div>
-        <div className={styles.item_title}>Парикмахерские услуги</div>
-      </div>
-      <div className={styles.services_item}>
-        <div className={styles.item_imageWrapper}>
-          <div className={styles.item_imageFrame}></div>
-          <div className={styles.item_image}>
-            <Image
-              src="/manicure.png"
-              width={396}
-              height={300}
-              alt="manicure"
-            />
-          </div>
-        </div>
-        <div className={styles.item_title}>Маникюр</div>
-      </div>
-      <div className={styles.services_item}>
-        <div className={styles.item_imageWrapper}>
-          <div className={styles.item_imageFrame}></div>
-          <div className={styles.item_image}>
-            <Image
-              src="/pedicure.png"
-              width={396}
-              height={300}
-              alt="pedicure"
-            />
-          </div>
-        </div>
-        <div className={styles.item_title}>Педикюр</div>
-      </div>
-      <div className={styles.services_item}>
-        <div className={styles.item_imageWrapper}>
-          <div className={styles.item_imageFrame}></div>
-          <div className={styles.item_image}>
-            <Image
-              src="/cosmetology.png"
-              width={396}
-              height={300}
-              alt="cosmetology"
-            />
-          </div>
-        </div>
-        <div className={styles.item_title}>Косметология</div>
-      </div>
-      <div className={styles.services_item}>
-        <div className={styles.item_imageWrapper}>
-          <div className={styles.item_imageFrame}></div>
-          <div className={styles.item_image}>
-            <Image
-              src="/aesthetist.png"
-              width={396}
-              height={300}
-              alt="aesthetist"
-            />
-          </div>
-        </div>
-        <div className={styles.item_title}>Эстетист по телу</div>
-      </div>
-      <div className={styles.services_item}>
-        <div className={styles.item_imageWrapper}>
-          <div className={styles.item_imageFrame}></div>
-          <div className={styles.item_image}>
-            <Image src="/visage.png" width={396} height={300} alt="visage" />
-          </div>
-        </div>
-        <div className={styles.item_title}>Визаж</div>
-      </div>
+        );
+      })}
+     
     </div>
   );
 };

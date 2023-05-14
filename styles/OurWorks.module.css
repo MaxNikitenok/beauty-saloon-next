@@ -7,7 +7,6 @@
 .ourWorks_title {
   font-weight: 700;
   font-size: 48px;
-  color: #ffffff;
   text-align: center;
   margin-bottom: 80px;
 }
@@ -15,7 +14,6 @@
 .ourWorks_navigation {
   font-weight: 400;
   font-size: 24px;
-  color: #ffffff;
   display: flex;
   justify-content: center;
   gap: 60px;

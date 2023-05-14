@@ -7,7 +7,6 @@
   margin: 0 auto;
   font-size: 18px;
   font-weight: 600;
-  color: #ffffff;
   border-bottom: 1px solid #ffffff80;
 }
 
@@ -189,19 +188,16 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
-  color: #ffffff;
   padding-bottom: 20px;
 }
 
 .block_title {
   font-weight: 700;
   font-size: 24px;
-  color: #ffffff;
   margin-bottom: 25px;
 }
 .block_description {
   font-weight: 400;
   font-size: 18px;
-  color: #ffffff;
   margin-bottom: 15px;
 }

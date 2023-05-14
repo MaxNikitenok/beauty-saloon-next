@@ -1,6 +1,45 @@
 import styles from '../styles/OurTeam.module.css';
 import Image from 'next/image';
 
+const ourTeam = [
+  {
+    id: 1,
+    img: '/employees/employee-1.png',
+    alt: 'hairdressers',
+    name: 'Елена Васильевна',
+  },
+  {
+    id: 2,
+    img: '/employees/employee-2.png',
+    alt: 'manicure',
+    name: 'Елена Васильевна',
+  },
+  {
+    id: 3,
+    img: '/employees/employee-3.png',
+    alt: 'pedicure',
+    name: 'Елена Васильевна',
+  },
+  {
+    id: 4,
+    img: '/employees/employee-4.png',
+    alt: 'cosmetology',
+    name: 'Елена Васильевна',
+  },
+  {
+    id: 5,
+    img: '/employees/employee-5.png',
+    alt: 'aesthetist',
+    name: 'Елена Васильевна',
+  },
+  {
+    id: 6,
+    img: '/employees/employee-6.png',
+    alt: 'visage',
+    name: 'Елена Васильевна',
+  },
+];
+
 const OurTeam = () => {
   return (
     <div className={styles.ourTeam}>

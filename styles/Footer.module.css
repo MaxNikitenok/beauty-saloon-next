@@ -11,21 +11,18 @@
 .footer_title {
   font-weight: 700;
   font-size: 24px;
-  color: #ffffff;
   margin-bottom: 24px;
 }
 .footer_infos {
   font-weight: 400;
   font-size: 18px;
   line-height: 50px;
-  color: #ffffff;
 }
 
 .copyright {
   width: 1296px;
   height: 55px;
   margin: 0 auto;
-  color: #ffffff;
   text-align: center;
   align-items: center;
 }

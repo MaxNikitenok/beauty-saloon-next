@@ -1,12 +1,14 @@
 .main {
-  min-height: 1038px;
+  min-width: var(--max-width);
+  max-width: 1920px;
+  height: 1038px;
+  margin: 0 auto;
   background: url(../public/main_bgc.png) no-repeat center top;
 }
 
 .main_title {
   width: 961px;
   height: 258px;
-  color: #ffffff;
   font-weight: 700;
   font-size: 72px;
   line-height: 120%;
@@ -16,28 +18,25 @@
 
 .scroll {
   display: flex;
-  color: #ffffff;
   justify-content: center;
   align-items: center;
   margin-top: 290px;
 }
 
 .about {
-  padding: 120px 0 95px 0;
-}
-
-.about_title {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--max-width);
+  margin: 120px auto 115px;
 }
 
 .about_description {
   width: 856px;
-  height: 261px;
-  margin: 60px auto 0;
+  margin-top: 60px;
   font-weight: 700;
   font-size: 27px;
   line-height: 130%;
-  color: #ffffff;
   text-align: center;
 }
 
