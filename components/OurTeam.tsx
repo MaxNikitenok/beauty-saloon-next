@@ -1,42 +1,48 @@
 import styles from '../styles/OurTeam.module.css';
 import Image from 'next/image';
 
-const ourTeam = [
+const employees = [
   {
-    id: 1,
+    id: 201,
     img: '/employees/employee-1.png',
-    alt: 'hairdressers',
+    alt: 'Елена Васильевна - Визажист',
     name: 'Елена Васильевна',
+    profession: 'Визажист',
   },
   {
-    id: 2,
+    id: 202,
     img: '/employees/employee-2.png',
-    alt: 'manicure',
+    alt: 'Елена Васильевна - Мастер маникюра',
     name: 'Елена Васильевна',
+    profession: 'Мастер маникюра',
   },
   {
-    id: 3,
+    id: 203,
     img: '/employees/employee-3.png',
-    alt: 'pedicure',
+    alt: 'Елена Васильевна - Мастер маникюра',
     name: 'Елена Васильевна',
+    profession: 'Мастер маникюра',
   },
   {
-    id: 4,
+    id: 204,
     img: '/employees/employee-4.png',
-    alt: 'cosmetology',
+    alt: 'Елена Васильевна - Косметолог',
     name: 'Елена Васильевна',
+    profession: 'Косметолог',
   },
   {
-    id: 5,
+    id: 205,
     img: '/employees/employee-5.png',
-    alt: 'aesthetist',
+    alt: 'Елена Васильевна - Парикмахер',
     name: 'Елена Васильевна',
+    profession: 'Парикмахер',
   },
   {
-    id: 6,
-    img: '/employees/employee-6.png',
-    alt: 'visage',
+    id: 206,
+    img: '/employees/employee-1.png',
+    alt: 'Елена Васильевна - Визажист',
     name: 'Елена Васильевна',
+    profession: 'Визажист',
   },
 ];
 
@@ -45,96 +51,27 @@ const OurTeam = () => {
     <div className={styles.ourTeam}>
       <div className={styles.ourTeam_title}>Наши мастера</div>
       <div className={styles.ourTeam_container}>
-        <div className={styles.ourTeam_employee}>
-          <div className={styles.employee_imageWrapper}>
-            <div className={styles.employee_imageFrame}></div>
-            <div className={styles.employee_image}>
-              <Image
-                src="/employees/employee-1.png"
-                width={400}
-                height={477}
-                alt="hairdressers"
-              />
+        {employees.map((employee) => {
+          return (
+            <div className={styles.ourTeam_employee} key={employee.id}>
+              <div className={styles.employee_imageWrapper}>
+                <div className={styles.employee_imageFrame}></div>
+                <div className={styles.employee_image}>
+                  <Image
+                    src={employee.img}
+                    width={400}
+                    height={477}
+                    alt={employee.alt}
+                  />
+                </div>
+              </div>
+              <div className={styles.employee_name}>{employee.name}</div>
+              <div className={styles.employee_profession}>
+                {employee.profession}
+              </div>
             </div>
-          </div>
-          <div className={styles.employee_name}>Елена Васильевна</div>
-          <div className={styles.employee_profession}>Визажист</div>
-        </div>
-        <div className={styles.ourTeam_employee}>
-          <div className={styles.employee_imageWrapper}>
-            <div className={styles.employee_imageFrame}></div>
-            <div className={styles.employee_image}>
-              <Image
-                src="/employees/employee-2.png"
-                width={400}
-                height={477}
-                alt="hairdressers"
-              />
-            </div>
-          </div>
-          <div className={styles.employee_name}>Елена Васильевна</div>
-          <div className={styles.employee_profession}>Визажист</div>
-        </div>
-        <div className={styles.ourTeam_employee}>
-          <div className={styles.employee_imageWrapper}>
-            <div className={styles.employee_imageFrame}></div>
-            <div className={styles.employee_image}>
-              <Image
-                src="/employees/employee-3.png"
-                width={400}
-                height={477}
-                alt="hairdressers"
-              />
-            </div>
-          </div>
-          <div className={styles.employee_name}>Елена Васильевна</div>
-          <div className={styles.employee_profession}>Визажист</div>
-        </div>
-        <div className={styles.ourTeam_employee}>
-          <div className={styles.employee_imageWrapper}>
-            <div className={styles.employee_imageFrame}></div>
-            <div className={styles.employee_image}>
-              <Image
-                src="/employees/employee-4.png"
-                width={400}
-                height={477}
-                alt="hairdressers"
-              />
-            </div>
-          </div>
-          <div className={styles.employee_name}>Елена Васильевна</div>
-          <div className={styles.employee_profession}>Визажист</div>
-        </div>
-        <div className={styles.ourTeam_employee}>
-          <div className={styles.employee_imageWrapper}>
-            <div className={styles.employee_imageFrame}></div>
-            <div className={styles.employee_image}>
-              <Image
-                src="/employees/employee-5.png"
-                width={400}
-                height={477}
-                alt="hairdressers"
-              />
-            </div>
-          </div>
-          <div className={styles.employee_name}>Елена Васильевна</div>
-          <div className={styles.employee_profession}>Визажист</div>
-        </div>
-        <div className={styles.ourTeam_employee}>
-          <div className={styles.employee_imageWrapper}>
-            <div className={styles.employee_imageFrame}></div>
-            <div className={styles.employee_image}>
-              <Image
-                src="/employees/employee-1.png"
-                width={400}
-                height={477}
-                alt="hairdressers"
-              />
-            </div>
-          </div>
-          <div className={styles.employee_name}>Елена Васильевна</div>
-          <div className={styles.employee_profession}>Визажист</div>
-        </div>
+          );
+        })}
       </div>
     </div>
   );
