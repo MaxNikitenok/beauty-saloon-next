@@ -4,43 +4,43 @@ import Image from 'next/image';
 const employees = [
   {
     id: 201,
-    img: '/employees/employee-1.png',
-    alt: 'Елена Васильевна - Визажист',
+    image: '/employees/employee-1.png',
+    description: 'Елена Васильевна - Визажист',
     name: 'Елена Васильевна',
     profession: 'Визажист',
   },
   {
     id: 202,
-    img: '/employees/employee-2.png',
-    alt: 'Елена Васильевна - Мастер маникюра',
+    image: '/employees/employee-2.png',
+    description: 'Елена Васильевна - Мастер маникюра',
     name: 'Елена Васильевна',
     profession: 'Мастер маникюра',
   },
   {
     id: 203,
-    img: '/employees/employee-3.png',
-    alt: 'Елена Васильевна - Мастер маникюра',
+    image: '/employees/employee-3.png',
+    description: 'Елена Васильевна - Мастер маникюра',
     name: 'Елена Васильевна',
     profession: 'Мастер маникюра',
   },
   {
     id: 204,
-    img: '/employees/employee-4.png',
-    alt: 'Елена Васильевна - Косметолог',
+    image: '/employees/employee-4.png',
+    description: 'Елена Васильевна - Косметолог',
     name: 'Елена Васильевна',
     profession: 'Косметолог',
   },
   {
     id: 205,
-    img: '/employees/employee-5.png',
-    alt: 'Елена Васильевна - Парикмахер',
+    image: '/employees/employee-5.png',
+    description: 'Елена Васильевна - Парикмахер',
     name: 'Елена Васильевна',
     profession: 'Парикмахер',
   },
   {
     id: 206,
-    img: '/employees/employee-1.png',
-    alt: 'Елена Васильевна - Визажист',
+    image: '/employees/employee-1.png',
+    description: 'Елена Васильевна - Визажист',
     name: 'Елена Васильевна',
     profession: 'Визажист',
   },
@@ -58,10 +58,10 @@ const OurTeam = () => {
                 <div className={styles.employee_imageFrame}></div>
                 <div className={styles.employee_image}>
                   <Image
-                    src={employee.img}
+                    src={employee.image}
                     width={400}
                     height={477}
-                    alt={employee.alt}
+                    alt={employee.description}
                   />
                 </div>
               </div>

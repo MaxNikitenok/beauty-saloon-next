@@ -4,38 +4,38 @@ import Image from 'next/image';
 const services = [
   {
     id: 101,
-    img: '/hairdressers.png',
-    alt: 'hairdressers',
+    image: '/hairdressers.png',
+    description: 'hairdressers',
     title: 'Парикмахерские услуги',
   },
   {
     id: 102,
-    img: '/manicure.png',
-    alt: 'manicure',
+    image: '/manicure.png',
+    description: 'manicure',
     title: 'Маникюр',
   },
   {
     id: 103,
-    img: '/pedicure.png',
-    alt: 'pedicure',
+    image: '/pedicure.png',
+    description: 'pedicure',
     title: 'Педикюр',
   },
   {
     id: 104,
-    img: '/cosmetology.png',
-    alt: 'cosmetology',
+    image: '/cosmetology.png',
+    description: 'cosmetology',
     title: 'Косметология',
   },
   {
     id: 105,
-    img: '/aesthetist.png',
-    alt: 'aesthetist',
+    image: '/aesthetist.png',
+    description: 'aesthetist',
     title: 'Эстетист по телу',
   },
   {
     id: 106,
-    img: '/visage.png',
-    alt: 'visage',
+    image: '/visage.png',
+    description: 'visage',
     title: 'Визаж',
   },
 ];
@@ -50,10 +50,10 @@ const Services = () => {
               <div className={styles.item_imageFrame}></div>
               <div className={styles.item_image}>
                 <Image
-                  src={service.img}
+                  src={service.image}
                   width={396}
                   height={300}
-                  alt={service.alt}
+                  alt={service.description}
                 />
               </div>
             </div>
