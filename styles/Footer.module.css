@@ -1,0 +1,28 @@
+.footer {
+  width: 1296px;
+  margin: 0 auto 30px;
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ffffff80;
+  border-bottom: 1px solid #ffffff80;
+}
+
+.footer_title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.footer_infos {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.copyright {
+  width: 1296px;
+  height: 55px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}

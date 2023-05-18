@@ -1,0 +1,12 @@
+.cosmetics {
+  width: 1296px;
+  display: flex;
+  margin: 100px auto 168px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.cosmetics_item {
+  opacity: 0.5;
+}
