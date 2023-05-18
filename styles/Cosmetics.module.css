@@ -1,9 +1,10 @@
 .cosmetics {
   width: 1296px;
-  height: 144px;
   display: flex;
   margin: 100px auto 168px;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 100px;
 }
 
 .cosmetics_item {

@@ -10,7 +10,6 @@ import { useState } from 'react';
 
 const Navbar = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   const [showMenu, setShowMenu] = useState(false);
 
