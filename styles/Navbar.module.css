@@ -35,6 +35,7 @@
   color: #ffffff;
   padding-bottom: 3px;
   border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #ffffff00;
 }
 
 .link:hover {
@@ -47,6 +48,19 @@
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid #cdaa7d;
+  transition: ease;
+  transition-duration: 800ms;
+  animation-name: line;
+  animation-duration: 800ms;
+}
+
+@keyframes line {
+  0% {
+    border-bottom: 1px solid #cdaa7d00;
+  }
+  100% {
+    border-bottom: 1px solid #cdaa7d;
+  }
 }
 
 .menuButton_container {

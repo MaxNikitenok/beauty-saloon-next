@@ -20,6 +20,8 @@
 }
 
 .navigation_item {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ffffff00;
   cursor: pointer;
 }
 
@@ -27,6 +29,8 @@
   color: #cdaa7d;
   padding-bottom: 3px;
   border-bottom: 1px solid #cdaa7d;
+  transition: ease;
+  transition-duration: 800ms;
 }
 
 .navigation_item:hover {
