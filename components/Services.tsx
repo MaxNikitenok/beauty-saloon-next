@@ -4,37 +4,37 @@ import Image from 'next/image';
 const services = [
   {
     id: 101,
-    image: '/hairdressers.png',
+    image: '/services/hairdressers.png',
     description: 'hairdressers',
     title: 'Парикмахерские услуги',
   },
   {
     id: 102,
-    image: '/manicure.png',
+    image: '/services/manicure.png',
     description: 'manicure',
     title: 'Маникюр',
   },
   {
     id: 103,
-    image: '/pedicure.png',
+    image: '/services/pedicure.png',
     description: 'pedicure',
     title: 'Педикюр',
   },
   {
     id: 104,
-    image: '/cosmetology.png',
+    image: '/services/cosmetology.png',
     description: 'cosmetology',
     title: 'Косметология',
   },
   {
     id: 105,
-    image: '/aesthetist.png',
+    image: '/services/aesthetist.png',
     description: 'aesthetist',
     title: 'Эстетист по телу',
   },
   {
     id: 106,
-    image: '/visage.png',
+    image: '/services/visage.png',
     description: 'visage',
     title: 'Визаж',
   },
