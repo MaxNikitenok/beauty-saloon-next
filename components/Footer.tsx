@@ -13,8 +13,8 @@ const Footer = () => {
         <div className={styles.footer_contacts}>
           <div className={styles.footer_title}>Контакты</div>
           <div className={styles.footer_infos}>
-            <p>+7 (812) 123-45-67</p>
-            <p>+7 (812) 123-45-67</p>
+            <p><a href="tel:12345678">+7 (812) 123-45-67</a></p>
+            <p><a href="tel:12345678">+7 (812) 123-45-67</a></p>
             <p>Новоостровский проспект, дом 36 лит. С</p>
           </div>
         </div>

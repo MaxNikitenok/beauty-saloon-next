@@ -1,17 +1,17 @@
-import Image from 'next/image';
-import styles from './page.module.css';
-import { CgScrollV } from 'react-icons/cg';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import OurWorks from '../components/OurWorks';
-import Services from '@/components/Services';
-import Cosmetics from '@/components/Cosmetics';
+import Image from "next/image";
+import styles from "./page.module.css";
+import { CgScrollV } from "react-icons/cg";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import OurWorks from "../components/OurWorks";
+import Services from "@/components/Services";
+import Cosmetics from "@/components/Cosmetics";
 
 const Home = () => {
   return (
     <>
       <main className={styles.main}>
-        <Navbar/>
+        <Header />
         <h1 className={styles.main_title}>
           Салон красоты
           <br />
@@ -43,10 +43,10 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <Services/>
-      <Cosmetics/>
-      <OurWorks/>
-      <Footer/>
+      <Services />
+      <Cosmetics />
+      <OurWorks />
+      <Footer />
     </>
   );
 };

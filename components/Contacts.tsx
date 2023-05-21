@@ -1,4 +1,4 @@
-import styles from '../styles/Contacts.module.css';
+import styles from "../styles/Contacts.module.css";
 
 const Contacts = () => {
   return (
@@ -15,8 +15,12 @@ const Contacts = () => {
         <div className={styles.info_part}>
           <div className={styles.info_item}>
             <div className={styles.info_title}>Контакты</div>
-            <div className={styles.info_description}>+7 (812) 123-45-67</div>
-            <div className={styles.info_description}>+7 (812) 123-45-67</div>
+            <div className={styles.info_description}>
+              <a href="tel:12345678">+7 (812) 123-45-67</a>
+            </div>
+            <div className={styles.info_description}>
+              <a href="tel:12345678">+7 (812) 123-45-67</a>
+            </div>
             <div className={styles.info_description}>
               Новоостровский проспект, дом 36 лит. С
             </div>
@@ -34,8 +38,12 @@ const Contacts = () => {
         <div className={styles.info_part}>
           <div className={styles.info_item}>
             <div className={styles.info_title}>Контакты</div>
-            <div className={styles.info_description}>+7 (812) 123-45-67</div>
-            <div className={styles.info_description}>+7 (812) 123-45-67</div>
+            <div className={styles.info_description}>
+              <a href="tel:12345678">+7 (812) 123-45-67</a>
+            </div>
+            <div className={styles.info_description}>
+              <a href="tel:12345678">+7 (812) 123-45-67</a>
+            </div>
             <div className={styles.info_description}>
               Новоостровский проспект, дом 36 лит. С
             </div>

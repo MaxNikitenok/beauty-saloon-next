@@ -1,0 +1,26 @@
+.notFound {
+  min-width: var(--max-width);
+  max-width: 1920px;
+  height: 100vh;
+  margin: 0 auto;
+  background: url(../public/main_bgc.png) no-repeat center top;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 48px;
+  color: #000;
+  backdrop-filter: invert(100%);
+}
+
+.text p {
+  padding: 0 8px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 24px 5px #fff;
+}

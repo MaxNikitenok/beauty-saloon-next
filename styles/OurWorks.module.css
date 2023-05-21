@@ -20,6 +20,8 @@
 }
 
 .navigation_item {
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ffffff00;
   cursor: pointer;
 }
 
@@ -27,6 +29,8 @@
   color: #cdaa7d;
   padding-bottom: 3px;
   border-bottom: 1px solid #cdaa7d;
+  transition: ease;
+  transition-duration: 800ms;
 }
 
 .navigation_item:hover {
@@ -40,8 +44,24 @@
   gap: 24px;
 }
 
+.works_item {
+  animation-name: list;
+  animation-duration: 800ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes list {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .works_emptyItem {
   width: 416px;
+  height: 416px;
   margin: 0 auto;
   font-weight: 400;
   font-size: 20px;
