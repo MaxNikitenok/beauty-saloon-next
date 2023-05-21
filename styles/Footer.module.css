@@ -19,6 +19,11 @@
   line-height: 50px;
 }
 
+.footer_infos a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .copyright {
   width: 1296px;
   height: 55px;

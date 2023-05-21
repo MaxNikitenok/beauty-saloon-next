@@ -1,13 +1,13 @@
 import Contacts from "@/components/Contacts";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 
 const ContactsPage = () => {
   return (
     <>
-      <Navbar/>
-      <Contacts/>
-      <Footer/>
+      <Header />
+      <Contacts />
+      <Footer />
     </>
   );
 };

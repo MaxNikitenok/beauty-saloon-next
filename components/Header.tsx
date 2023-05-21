@@ -2,19 +2,19 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../styles/Navbar.module.css';
+import styles from '../styles/Header.module.css';
 import { SlSocialInstagram } from 'react-icons/sl';
 import { RxCross1 } from 'react-icons/rx';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 
-const Navbar = () => {
+const Header = () => {
   const pathname = usePathname();
 
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <>
+    <header className={styles.header}>
       <nav className={styles.navbar}>
         <a href="https://www.instagram.com/" className={styles.instaLink}>
           <SlSocialInstagram size={24} />
@@ -141,8 +141,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </>
+    </header>
   );
 };
 
-export default Navbar;
+export default Header;

@@ -8,7 +8,7 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata = {
   title: 'Delote-Beauty',
-  description: 'Beauty-saloon',
+  description: 'Beauty saloon Delote-Beauty',
 }
 
 export default function RootLayout({

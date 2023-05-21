@@ -48,8 +48,6 @@
   text-decoration: none;
   padding-bottom: 3px;
   border-bottom: 1px solid #cdaa7d;
-  transition: ease;
-  transition-duration: 800ms;
   animation-name: line;
   animation-duration: 800ms;
 }

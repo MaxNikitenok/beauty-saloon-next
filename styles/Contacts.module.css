@@ -40,3 +40,8 @@
   font-size: 18px;
   line-height: 50px;
 }
+
+.info_description a {
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,13 +1,13 @@
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 import Price from "@/components/Price";
 
 const PricePage = () => {
   return (
     <>
-      <Navbar/>
-      <Price/>
-      <Footer/>
+      <Header />
+      <Price />
+      <Footer />
     </>
   );
 };

@@ -1,13 +1,13 @@
 import Cosmetics from "@/components/Cosmetics";
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 
 const CosmeticsPage = () => {
   return (
     <>
-      <Navbar/>
-      <Cosmetics/>
-      <Footer/>
+      <Header />
+      <Cosmetics />
+      <Footer />
     </>
   );
 };
