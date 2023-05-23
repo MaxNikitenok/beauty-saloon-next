@@ -1,23 +1,60 @@
-.wrapper {
-  max-width: var(--max-width);
-  margin: 0 auto;
+.header {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
 }
 
 .header {
-  position: sticky;
-  top: 0;
+  height: 100px;
+  position: fixed;
   z-index: 999;
+  left: 0;
+  right: 0;
+  transition: 300ms ease all;
+}
+
+.minHeader {
+  height: 60px;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  background-color: #111111f3;
+  border-bottom: 1px solid #ffffff80;
+  transition: 300ms ease all;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  height: 100%;
 }
 
 .navbar {
-  height: 100px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   font-size: 18px;
   font-weight: 600;
+  padding: 0 20px;
   border-bottom: 1px solid #ffffff80;
+  transition: 100ms ease all;
+}
+
+.minNavbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 100ms ease all;
+  padding: 0 20px;
+  box-shadow: 0 0 10 0 #111111;
 }
 
 .instaLink {

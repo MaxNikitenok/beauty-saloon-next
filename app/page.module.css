@@ -11,6 +11,7 @@
   height: 938px;
   margin: 0 auto;
   padding-top: 260px;
+  margin-bottom: 220px;
 }
 
 .main_title {
@@ -33,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 120px auto 115px;
+  margin: 0 0 115px 0;
 }
 
 .about_description {

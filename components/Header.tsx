@@ -6,17 +6,30 @@ import styles from "../styles/Header.module.css";
 import { SlSocialInstagram } from "react-icons/sl";
 import { RxCross1 } from "react-icons/rx";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
   const pathname = usePathname();
 
   const [showMenu, setShowMenu] = useState(false);
 
+  const [scroll, setScroll] = useState(0);
+
+  console.log(scroll)
+
+  const handleScroll = () => {
+    setScroll(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className={styles.wrapper}>
-      <header className={styles.header}>
-        <nav className={styles.navbar}>
+    <header className={scroll > 60 ? styles.minHeader : styles.header}>
+      <div className={styles.wrapper}>
+        <nav className={scroll > 60 ? styles.minNavbar : styles.navbar}>
           <a href="https://www.instagram.com/" className={styles.instaLink}>
             <SlSocialInstagram size={24} />
           </a>
@@ -153,8 +166,8 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 };
 
