@@ -1,8 +1,12 @@
 .reviews {
-  width: 1296px;
   display: flex;
-  margin: 100px auto 168px;
+  margin: 100px 0 168px 0;
   justify-content: space-around;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .reviews p {

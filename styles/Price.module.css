@@ -1,6 +1,10 @@
 .price {
-  width: 1296px;
-  margin: 80px auto 100px;
+  margin: 80px 0 100px 0;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .price_block {
@@ -11,9 +15,6 @@
 
 .price_block:nth-child(even) {
   flex-direction: row-reverse;
-}
-
-.block_image {
 }
 
 .block_list {

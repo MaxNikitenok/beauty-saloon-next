@@ -102,6 +102,7 @@ console.log(blocks);
 const Price = () => {
   return (
     <div className={styles.price}>
+      <div className={styles.wrapper}>
       {blocks.map((block, index) => {
         return (
           <div className={styles.price_block} key={index}>
@@ -129,6 +130,7 @@ const Price = () => {
           </div>
         );
       })}
+    </div>
     </div>
   );
 };

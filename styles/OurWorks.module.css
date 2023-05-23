@@ -1,6 +1,9 @@
 .ourWorks {
-  width: 1296px;
   margin: 0 auto 100px;
+}
+
+.wrapper {
+  max-width: var(--max-width);
 }
 
 .ourWorks_title {
@@ -39,8 +42,9 @@
 }
 
 .ourWorks_works {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
