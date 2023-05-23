@@ -1,6 +1,10 @@
 .ourTeam {
-  width: 1296px;
-  margin: 100px auto 80px;
+   margin: 100px 0 80px 0;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .ourTeam_title {
@@ -11,8 +15,9 @@
 }
 
 .ourTeam_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 

@@ -1,9 +1,13 @@
 .services {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1296px;
   margin: 20px auto 150px;
-  gap: 24px;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px;
 }
 
 .services_item {

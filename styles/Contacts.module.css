@@ -1,6 +1,10 @@
 .contacts {
-  width: 1296px;
-  margin: 100px auto 80px;
+  margin: 100px 0 80px 0;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .contacts_title {
@@ -15,6 +19,8 @@
   filter: sepia(60%);
   opacity: 0.8;
   border: 1px solid #CDAA7D;
+  width: 1296px;
+  height: 576px;
 }
 
 .info {

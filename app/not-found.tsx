@@ -1,20 +1,26 @@
-'use client';
-import styles from "../styles/not-found.module.css";
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+"use client";
 
-const Custom404= () => {
+import styles from "../styles/not-found.module.css";
+import { useRouter } from "next/navigation";
+
+const Custom404 = () => {
   const { push } = useRouter();
 
-  useEffect(() => {
-    setTimeout(() => {
-      push('/');
-    }, 3000)
-     
-  }, []);
+  setTimeout(() => {
+    push('/');
+  }, 4000)
+  setTimeout(() => {
+    location.reload()
+  }, 5000)
+
   return (
     <div className={styles.notFound}>
-      <div className={styles.text}><p>404 | Страница не найдена</p></div>
+      <div className={styles.mask}>
+        <p className={styles.code}>404</p>
+        <p className={styles.codeDescription}>Страница не найдена</p>
+        <p className={styles.toHome}>Возвращаем вас на главную</p>
+        <p className={styles.line}></p>
+      </div>
     </div>
   );
 };

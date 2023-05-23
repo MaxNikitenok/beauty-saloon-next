@@ -1,9 +1,19 @@
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .navbar {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: var(--max-width);
   margin: 0 auto;
   font-size: 18px;
   font-weight: 600;
@@ -152,7 +162,7 @@
   width: 475px;
   height: 100vh;
   position: fixed;
-  z-index: 999;
+  z-index: 1000;
   top: 0;
   right: 0;
   border: 1px solid #ffffff80;
@@ -166,7 +176,7 @@
   width: 475px;
   height: 100vh;
   position: fixed;
-  z-index: 999;
+  z-index: 1000;
   top: 0;
   right: -600px;
   border: 1px solid #ffffff80;

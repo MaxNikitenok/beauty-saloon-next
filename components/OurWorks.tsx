@@ -64,65 +64,68 @@ const works = [
 const OurWorks = () => {
   const [typeFilter, setTypeFilter] = useState("");
 
-  const filteredWorks = works.filter((work) => (typeFilter ? work.type === typeFilter : work.type));
+  const filteredWorks = works.filter((work) =>
+    typeFilter ? work.type === typeFilter : work.type
+  );
 
   return (
     <div className={styles.ourWorks}>
-      <div className={styles.ourWorks_title}>Наши работы</div>
-      <nav className={styles.ourWorks_navigation}>
-        <div
-          className={
-            typeFilter === ""
-              ? styles.navigation_activeItem
-              : styles.navigation_item
-          }
-          onClick={() => setTypeFilter("")}
-        >
-          Показать все
-        </div>
-        <div
-          className={
-            typeFilter === "hair"
-              ? styles.navigation_activeItem
-              : styles.navigation_item
-          }
-          onClick={() => setTypeFilter("hair")}
-        >
-          Парикмахерские услуги
-        </div>
-        <div
-          className={
-            typeFilter === "manicure"
-              ? styles.navigation_activeItem
-              : styles.navigation_item
-          }
-          onClick={() => setTypeFilter("manicure")}
-        >
-          Маникюр
-        </div>
-        <div
-          className={
-            typeFilter === "visage"
-              ? styles.navigation_activeItem
-              : styles.navigation_item
-          }
-          onClick={() => setTypeFilter("visage")}
-        >
-          Визаж
-        </div>
-        <div
-          className={
-            typeFilter === "pedicure"
-              ? styles.navigation_activeItem
-              : styles.navigation_item
-          }
-          onClick={() => setTypeFilter("pedicure")}
-        >
-          Педикюр
-        </div>
-      </nav>
-      <div className={styles.ourWorks_works}>
-        {filteredWorks.map((work) => {
+      <div className={styles.wrapper}>
+        <div className={styles.ourWorks_title}>Наши работы</div>
+        <nav className={styles.ourWorks_navigation}>
+          <div
+            className={
+              typeFilter === ""
+                ? styles.navigation_activeItem
+                : styles.navigation_item
+            }
+            onClick={() => setTypeFilter("")}
+          >
+            Показать все
+          </div>
+          <div
+            className={
+              typeFilter === "hair"
+                ? styles.navigation_activeItem
+                : styles.navigation_item
+            }
+            onClick={() => setTypeFilter("hair")}
+          >
+            Парикмахерские услуги
+          </div>
+          <div
+            className={
+              typeFilter === "manicure"
+                ? styles.navigation_activeItem
+                : styles.navigation_item
+            }
+            onClick={() => setTypeFilter("manicure")}
+          >
+            Маникюр
+          </div>
+          <div
+            className={
+              typeFilter === "visage"
+                ? styles.navigation_activeItem
+                : styles.navigation_item
+            }
+            onClick={() => setTypeFilter("visage")}
+          >
+            Визаж
+          </div>
+          <div
+            className={
+              typeFilter === "pedicure"
+                ? styles.navigation_activeItem
+                : styles.navigation_item
+            }
+            onClick={() => setTypeFilter("pedicure")}
+          >
+            Педикюр
+          </div>
+        </nav>
+        <div className={styles.ourWorks_works}>
+          {filteredWorks.map((work) => {
             return (
               <div className={styles.works_item} key={work.id}>
                 <Image
@@ -134,7 +137,12 @@ const OurWorks = () => {
               </div>
             );
           })}
-          {!filteredWorks.length && <div className={styles.works_emptyItem}>Упс... Фото работ ещё не добавлены.</div>}
+          {!filteredWorks.length && (
+            <div className={styles.works_emptyItem}>
+              Упс... Фото работ ещё не добавлены.
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

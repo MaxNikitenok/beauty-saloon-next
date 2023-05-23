@@ -1,5 +1,6 @@
-.cosmetics {
-  width: 1296px;
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
   display: flex;
   margin: 100px auto 168px;
   justify-content: space-around;
