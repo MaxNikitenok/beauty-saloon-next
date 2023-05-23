@@ -1,6 +1,6 @@
 .reviews {
   display: flex;
-  margin: 100px 0 168px 0;
+  padding: 170px 0 168px 0;
   justify-content: space-around;
 }
 

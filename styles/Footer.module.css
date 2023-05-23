@@ -1,17 +1,14 @@
-.footer {
-  margin-bottom: 30px;
-  padding: 70px 0;
-  border-top: 1px solid #ffffff80;
-  border-bottom: 1px solid #ffffff80;
-}
-
 .wrapper {
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 70px 0;
+  border-top: 1px solid #ffffff80;
+  border-bottom: 1px solid #ffffff80;
 }
-  
+ 
 .footer_title {
   font-weight: 700;
   font-size: 24px;
