@@ -18,7 +18,7 @@ const Home = () => {
             <br />
             «Delote-Beauty»
             <br />
-            на Крестовском
+            на Ленинской
           </h1>
           <div className={styles.scroll}>
             <CgScrollV size={30} />

@@ -1,3 +1,5 @@
+"use client";
+import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
 import styles from "../styles/Contacts.module.css";
 
 const Contacts = () => {
@@ -5,11 +7,21 @@ const Contacts = () => {
     <div className={styles.contacts}>
       <div className={styles.wrapper}>
         <div className={styles.contacts_title}>Контакты</div>
-        <iframe
-          className={styles.map}
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d116085.73758156416!2d30.320203587123263!3d53.87382411870579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1683753756764!5m2!1sru!2sby"
-          loading="lazy"
-        ></iframe>
+        <YMaps>
+          <div>
+            <Map
+              defaultState={{
+                center: [53.89927, 30.337509],
+                zoom: 17,
+                controls: ["zoomControl", "fullscreenControl"],
+              }}
+              modules={["control.ZoomControl", "control.FullscreenControl"]}
+              className={styles.map}
+            >
+              <Placemark defaultGeometry={[53.89927, 30.337509]} />
+            </Map>
+          </div>
+        </YMaps>
         <div className={styles.info}>
           <div className={styles.info_part}>
             <div className={styles.info_item}>
