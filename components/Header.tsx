@@ -177,6 +177,54 @@ const Header = () => {
                   </div>
                 </div>
               </div>
+              <div className={styles.popup_nav}>
+              <Link
+                href="/"
+                className={pathname === "/" ? styles.link_active : styles.link}
+              >
+                Главная
+              </Link>
+              <Link
+                href="/our-team"
+                className={
+                  pathname === "/our-team" ? styles.link_active : styles.link
+                }
+              >
+                Мастера
+              </Link>
+              <Link
+                href="/cosmetics"
+                className={
+                  pathname === "/cosmetics" ? styles.link_active : styles.link
+                }
+              >
+                Косметика
+              </Link>
+              <Link
+                href="/price"
+                className={
+                  pathname === "/price" ? styles.link_active : styles.link
+                }
+              >
+                Цены
+              </Link>
+              <Link
+                href="/reviews"
+                className={
+                  pathname === "/reviews" ? styles.link_active : styles.link
+                }
+              >
+                Отзывы
+              </Link>
+              <Link
+                href="/contacts"
+                className={
+                  pathname === "/contacts" ? styles.link_active : styles.link
+                }
+              >
+                Контакты
+              </Link>
+              </div>
             </div>
           </div>
         </div>

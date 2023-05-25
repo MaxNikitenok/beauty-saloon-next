@@ -51,6 +51,7 @@ const Services = () => {
                 <div className={styles.item_imageFrame}></div>
                 <div className={styles.item_image}>
                   <Image
+                    className={styles.image}
                     src={service.image}
                     width={396}
                     height={300}
