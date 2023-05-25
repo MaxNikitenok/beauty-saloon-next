@@ -70,3 +70,26 @@
   font-weight: 400;
   font-size: 20px;
 }
+
+@media (max-width: 900px) {
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .ourWorks_navigation {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  
+}

@@ -129,6 +129,7 @@ const OurWorks = () => {
             return (
               <div className={styles.works_item} key={work.id}>
                 <Image
+                  className={styles.image}
                   src={work.image}
                   width={416}
                   height={416}

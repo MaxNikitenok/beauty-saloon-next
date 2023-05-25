@@ -1,0 +1,22 @@
+.main {
+  height: 938px;
+  margin: 0 auto;
+  padding-top: 260px;
+  margin-bottom: 220px;
+}
+
+.main_title {
+  height: 258px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 290px;
+}

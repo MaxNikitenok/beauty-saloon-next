@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.map {
+  max-width: 100%;
+}
+
 .contacts_title {
   text-align: center;
   font-weight: 700;
@@ -16,8 +20,7 @@
 
 .map {
   margin-bottom: 80px;
-  filter: sepia(60%);
-  opacity: 0.8;
+  filter: sepia(10%);
   border: 1px solid #CDAA7D;
   width: 1296px;
   height: 576px;
