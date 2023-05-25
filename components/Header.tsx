@@ -16,7 +16,9 @@ const Header = () => {
   let x
 
   if (typeof window !== "undefined") {
-    x = window.scrollY
+    x = window.scrollY;
+  } else {
+    x = 0;
   }
 
   const [scroll, setScroll] = useState(x);
