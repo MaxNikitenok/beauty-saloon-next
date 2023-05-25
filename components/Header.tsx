@@ -13,7 +13,15 @@ const Header = () => {
 
   const [showMenu, setShowMenu] = useState(false);
 
-  const [scroll, setScroll] = useState(window.scrollY);
+  let x
+
+  if (typeof window !== "undefined") {
+    x = window.scrollY;
+  } else {
+    x = 0;
+  }
+
+  const [scroll, setScroll] = useState(x);
 
   const handleScroll = () => {
     setScroll(window.scrollY);
@@ -22,14 +30,17 @@ const Header = () => {
   useEffect(() => {
     window.scrollTo({
       top: 0,
-  });
+    });
+    setScroll(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className={scroll > 60 ? styles.minHeader : styles.header}>
-      <div className={scroll > 60 ? styles.headerBackMin : styles.headerBackFull}>
+    <header className={scroll > 40 ? styles.minHeader : styles.header}>
+      <div
+        className={scroll > 40 ? styles.headerBackMin : styles.headerBackFull}
+      >
         <div className={styles.wrapper}>
           <nav className={styles.navbar}>
             <a href="https://www.instagram.com/" className={styles.instaLink}>
@@ -38,14 +49,12 @@ const Header = () => {
             <div className={styles.leftLinks}>
               <Link
                 href="/"
-                onClick={() => setScroll(window.scrollY)}
                 className={pathname === "/" ? styles.link_active : styles.link}
               >
                 Главная
               </Link>
               <Link
                 href="/our-team"
-                onClick={() => setScroll(window.scrollY)}
                 className={
                   pathname === "/our-team" ? styles.link_active : styles.link
                 }
