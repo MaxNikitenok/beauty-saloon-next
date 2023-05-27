@@ -13,15 +13,15 @@ const Header = () => {
 
   const [showMenu, setShowMenu] = useState(false);
 
-  let x
+  let positionScrollY
 
   if (typeof window !== "undefined") {
-    x = window.scrollY;
+    positionScrollY = window.scrollY;
   } else {
-    x = 0;
+    positionScrollY = 0;
   }
 
-  const [scroll, setScroll] = useState(x);
+  const [scroll, setScroll] = useState(positionScrollY);
 
   const handleScroll = () => {
     setScroll(window.scrollY);
