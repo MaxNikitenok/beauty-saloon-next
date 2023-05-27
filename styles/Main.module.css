@@ -11,12 +11,31 @@
   font-size: 72px;
   line-height: 120%;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 15vh;
 }
 
 .scroll {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 290px;
+}
+
+@media (max-width: 500px) {
+  .main {
+    height: 100vh;
+  }
+
+  .main_title {
+    height: 25vh;
+  }
+
+  .main_title {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 410px) {
+  .main_title {
+    font-size: 42px;
+  }
 }

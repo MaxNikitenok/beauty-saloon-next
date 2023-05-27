@@ -193,8 +193,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
 
 .showPopup {
@@ -273,6 +273,19 @@
     display: none;
   }
 
+  .showPopup {
+    width: 48vw;
+  }
+  
+  .hidePopup {
+    width: 48vw;
+  }
+
+  .popup_cross {
+    top: 24px;
+    left: 40vw;
+  }
+
   .popup_content {
     display: none;
   }
@@ -283,9 +296,21 @@
     flex-direction: column;
     justify-content: center;
     gap: 60px;
+    font-size: 3vh;
   }
 }
 
 @media (max-width: 500px) {
+  .showPopup {
+    width: 100vw;
+  }
   
+  .hidePopup {
+    width: 100vw;
+  }
+
+  .popup_cross {
+    top: 24px;
+    left: 88vw;
+  }
 }

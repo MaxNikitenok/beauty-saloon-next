@@ -1,5 +1,5 @@
 .services {
-  padding: 20px 0 0 0;
+  padding: 20px 10px 0 10px;
 }
 
 .wrapper {
@@ -42,6 +42,10 @@
 }
 
 @media (max-width: 1250px) {
+  .services_item {
+    margin-bottom: 40px;
+  }
+
   .item_imageWrapper {
     width: 297px;
     height: 225px;
@@ -65,6 +69,10 @@
 }
 
 @media (max-width: 850px) {
+  .services_item {
+    margin-bottom: 20px;
+  }
+
   .item_imageWrapper {
     width: 198px;
     height: 150px;
