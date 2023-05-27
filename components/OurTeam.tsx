@@ -57,14 +57,13 @@ const OurTeam = () => {
               <div className={styles.ourTeam_employee} key={employee.id}>
                 <div className={styles.employee_imageWrapper}>
                   <div className={styles.employee_imageFrame}></div>
-                  <div className={styles.employee_image}>
-                    <Image
-                      src={employee.image}
-                      width={400}
-                      height={477}
-                      alt={employee.description}
-                    />
-                  </div>
+                  <Image
+                    className={styles.employee_image}
+                    src={employee.image}
+                    width={400}
+                    height={477}
+                    alt={employee.description}
+                  />
                 </div>
                 <div className={styles.employee_name}>{employee.name}</div>
                 <div className={styles.employee_profession}>
