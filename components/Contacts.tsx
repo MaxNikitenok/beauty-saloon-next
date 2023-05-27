@@ -33,7 +33,7 @@ const Contacts = () => {
                 <a href="tel:12345678">+7 (812) 123-45-67</a>
               </div>
               <div className={styles.info_description}>
-                Новоостровский проспект, дом 36 лит. С
+                улица Ленинская, дом 30
               </div>
             </div>
             <div className={styles.info_item}>
@@ -56,7 +56,7 @@ const Contacts = () => {
                 <a href="tel:12345678">+7 (812) 123-45-67</a>
               </div>
               <div className={styles.info_description}>
-                Новоостровский проспект, дом 36 лит. С
+              улица Ленинская, дом 30
               </div>
             </div>
             <div className={styles.info_item}>
