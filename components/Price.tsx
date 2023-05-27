@@ -103,34 +103,34 @@ const Price = () => {
   return (
     <div className={styles.price}>
       <div className={styles.wrapper}>
-      {blocks.map((block, index) => {
-        return (
-          <div className={styles.price_block} key={index}>
-            <div className={styles.block_image}>
+        {blocks.map((block, index) => {
+          return (
+            <div className={styles.price_block} key={index}>
               <Image
+                className={styles.block_image}
                 src={priceImages[index].image}
                 width={636}
                 height={536}
                 alt="image"
               />
-            </div>
-            <div className={styles.block_list}>
-              {block.map((item: any) => {
-                return (
-                  <div className={styles.list_item} key={item.id}>
-                    <div className={styles.item_title}>{item.title}</div>
-                    <div className={styles.item_cost}>{item.cost}</div>
-                    <div className={styles.item_description}>
-                      {item.description}
+
+              <div className={styles.block_list}>
+                {block.map((item: any) => {
+                  return (
+                    <div className={styles.list_item} key={item.id}>
+                      <div className={styles.item_title}>{item.title}</div>
+                      <div className={styles.item_cost}>{item.cost}</div>
+                      <div className={styles.item_description}>
+                        {item.description}
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

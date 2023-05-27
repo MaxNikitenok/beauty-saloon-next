@@ -11,23 +11,25 @@ const Footer = () => {
           <Link href={"/"} className={styles.footer_logo}>
             <Image src="/logo.png" width={60} height={58} alt="logo" />
           </Link>
-          <div className={styles.footer_contacts}>
-            <div className={styles.footer_title}>Контакты</div>
-            <div className={styles.footer_infos}>
-              <p>
-                <a href="tel:12345678">+7 (812) 123-45-67</a>
-              </p>
-              <p>
-                <a href="tel:12345678">+7 (812) 123-45-67</a>
-              </p>
-              <p>Новоостровский проспект, дом 36 лит. С</p>
+          <div className={styles.footer_infoWrapper}>
+            <div className={styles.footer_contacts}>
+              <div className={styles.footer_title}>Контакты</div>
+              <div className={styles.footer_infos}>
+                <p>
+                  <a href="tel:12345678">+7 (812) 123-45-67</a>
+                </p>
+                <p>
+                  <a href="tel:12345678">+7 (812) 123-45-67</a>
+                </p>
+                <p>улица Ленинская, дом 30</p>
+              </div>
             </div>
-          </div>
-          <div className={styles.footer_mode}>
-            <div className={styles.footer_title}>Режим работы</div>
-            <div className={styles.footer_infos}>
-              <p>C 10:00 до 21:00 (Пн-Пт)</p>
-              <p>С 11:00 до 20:00 (Сб-Вс)</p>
+            <div className={styles.footer_mode}>
+              <div className={styles.footer_title}>Режим работы</div>
+              <div className={styles.footer_infos}>
+                <p>C 10:00 до 21:00 (Пн-Пт)</p>
+                <p>С 11:00 до 20:00 (Сб-Вс)</p>
+              </div>
             </div>
           </div>
           <div className={styles.footer_socials}>

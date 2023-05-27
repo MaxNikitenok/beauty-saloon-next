@@ -1,5 +1,5 @@
 .ourTeam {
-   padding: 170px 0 80px 0;
+  padding: 170px 30px 80px 30px;
 }
 
 .wrapper {
@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 40px;
 }
 
 .ourTeam_employee {
@@ -56,4 +56,44 @@
 .employee_profession {
   font-weight: 400;
   font-size: 18px;
+}
+
+@media (max-width: 1024px){
+  .ourTeam {
+    padding: 150px 30px 20px 30px;
+  }
+
+  .ourTeam_title {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ourTeam {
+    padding: 130px 30px 0 30px;
+  }
+
+  .ourTeam_title {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+
+  .ourTeam_container {
+    gap: 0px;
+  }
+
+  .employee_imageWrapper {
+    width: calc(400px * 0.65);
+    height: calc(477px * 0.65);
+  }
+
+  .employee_imageFrame {
+    width: calc(400px * 0.65);
+    height: calc(477px * 0.65);
+  }
+
+  .employee_image {
+    width: calc(400px * 0.65);
+    height: calc(477px * 0.65);
+  }
 }
