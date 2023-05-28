@@ -112,7 +112,7 @@
 
 .menuButton_container {
   display: flex;
-  flex: 1;
+  flex: 1 1;
   justify-content: end;
 }
 
@@ -204,7 +204,7 @@
   z-index: 1000;
   top: 0;
   right: 0;
-  border: 1px solid #ffffff80;
+  border-left: 1px solid #ffffff80;
   background-color: #111111;
   transition: cubic-bezier(0.94, -0.57, 0.02, 1.52);
   transition-duration: 1000ms;
@@ -218,7 +218,7 @@
   z-index: 1000;
   top: 0;
   right: -600px;
-  border: 1px solid #ffffff80;
+  border-left: 1px solid #ffffff80;
   background-color: #111111;
   opacity: 0;
   transition: cubic-bezier(0.94, -0.57, 0.02, 1.52);
@@ -303,10 +303,12 @@
 @media (max-width: 500px) {
   .showPopup {
     width: 100vw;
+    border: none;
   }
   
   .hidePopup {
     width: 100vw;
+    border: none;
   }
 
   .popup_cross {
