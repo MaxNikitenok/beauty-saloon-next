@@ -57,6 +57,14 @@
 }
 
 @media (max-width: 1000px) {
+  .contacts {
+    padding: 130px 0 80px 0;
+  }
+
+  .contacts_title {
+    margin-bottom: 40px;
+  }
+
   .info {
     display: flex;
     flex-direction: column;
@@ -69,6 +77,18 @@
 }
 
 @media (max-width: 500px) {
+  .contacts {
+    padding: 130px 0 80px 0;
+  }
+
+  .contacts_title {
+    margin-bottom: 20px;
+  }
+
+  .map {
+    margin-bottom: 40px;
+  }
+
   .info {
     display: flex;
     flex-direction: column;
